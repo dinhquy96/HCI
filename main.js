@@ -26,8 +26,9 @@
         var email1 = document.getElementById("email1").value;
          var web1 = document.getElementById("web1").value;
         var comment1 = document.getElementById("comment1").value;
+       // alert(email1.indexOf('@'));
 
-        if( nickname1 != '' && email1 != '' && comment1 != '' && web1 != '' ){
+        if( nickname1 != '' && comment1 != '' && web1 != '' && (email1.indexOf('@') > 0) ){
         	addSession(nickname1);
         	$('#comments').append(
          	`<li class="comment" >
